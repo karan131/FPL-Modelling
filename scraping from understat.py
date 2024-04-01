@@ -54,8 +54,8 @@ for year in year_list:
     for match in data:
         if match['isResult']:  
             match_ids.append(match['id'])
-            home_team.append(match['h']['title'])
-            away_team.append(match['a']['title'])
+            home_team.append(match['h']['short_title'])
+            away_team.append(match['a']['short_title'])
             home_goals.append(match['goals']['h'])
             away_goals.append(match['goals']['a'])
             home_xG.append(match['xG']['h'])
